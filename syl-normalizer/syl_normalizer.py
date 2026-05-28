@@ -818,8 +818,8 @@ def try_merge_with_previous(
     if not is_consonant_with_athat(current_token):
         return None
     merged = unicodedata.normalize('NFC', previous_token + current_token)
-    # return merged if merged in dictionary else None
-    return merged # -- MODIFIED --
+    return merged if merged in dictionary else None
+    # return merged # -- MODIFIED --
 
 
 # ===========================================================================

@@ -1,0 +1,4 @@
+line    231 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line    353 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line    750 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line    921 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))

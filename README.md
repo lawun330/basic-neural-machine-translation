@@ -9,19 +9,10 @@ The workflow covers the full SMT pipeline from data normalization and SGM file g
 ## Error-Free PBSMT Workflow
 
 - Use Ubuntu-native Perl v5.38
-- Install Moses, GIZA++, and MGIZA
+- Install Marian and dependencies (nvcc, gcc-11, nvidia-smi)
 - Optionally configure paths in 
-    - config.baseline, generate_configs.pl,
-    - generate_sgms.pl, src2sgm.pl, and ref2sgm.pl
-- Create config.baseline for two translation directions using `generate_configs.pl`
-- Create SGMs using `generate_sgms.pl`
-- Copy the `mkcls` file from the `giza-pp/mkcls-v2/` folder to the `giza-pp/GIZA++-v2/` folder
-- Install ImageMagick and Graphviz using sudo
-- Edit `ubuntu-17.04/moses/scripts/generic/mteval-v13a.pl`:
-    ```perl
-    line 950: \p{Line_Break} # replace this
-    line 950: \p{Line_Break=Hyphen} # with this
-    ```
+    - seq2seq.phmy.sh
+- 
 
 ## Experiments
 

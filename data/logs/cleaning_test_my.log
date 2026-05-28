@@ -1,0 +1,4 @@
+line   1415 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line   2273 | 'စျာယ်'                        -> 'ဈာယ်'                         | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line   2437 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line   2459 | 'စျတ်'                         -> 'ဈတ်'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))

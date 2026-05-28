@@ -1,0 +1,7 @@
+line   1178 | 'ကားဖောင်'                     -> 'ကား ဖောင်'                    | stage4:split(2 parts)
+line   2923 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line   8823 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line   9684 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line  11322 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line  13217 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
+line  13485 | 'စျေး'                         -> 'ဈေး'                          | stage1:rule28 (စျ -> ဈ (two-consonant form to single char))
