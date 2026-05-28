@@ -33,6 +33,7 @@ Results:
 ...
 ├── img/
 ├── notebooks/
+├── models/
 ├── summary/
 │
 │
@@ -42,19 +43,20 @@ Results:
 │   └── logs/
 │
 ├── syl-normalizer/     # originally Sayar's # modified to merge with previous token for athat (်) cases
-└── run-baseline.pl     # originally Sayar's # modified paths
+└── seq2seq.myph.sh     # originally Sayar's # modified paths
 ```
 
 ## References
 
 - [In-Class Tutorial](https://github.com/ye-kyaw-thu/AIE-F/tree/main/slide-code/class-22/NMT-notebooks)
-- @InProceedings{mariannmt,
+- ```
+  @InProceedings{mariannmt,
       title     = {Marian: Fast Neural Machine Translation in {C++}},
       author    = {Junczys-Dowmunt, Marcin and Grundkiewicz, Roman and
-                   Dwojak, Tomasz and Hoang, Hieu and Heafield, Kenneth and
-                   Neckermann, Tom and Seide, Frank and Germann, Ulrich and
-                   Fikri Aji, Alham and Bogoychev, Nikolay and
-                   Martins, Andr\'{e} F. T. and Birch, Alexandra},
+                  Dwojak, Tomasz and Hoang, Hieu and Heafield, Kenneth and
+                  Neckermann, Tom and Seide, Frank and Germann, Ulrich and
+                  Fikri Aji, Alham and Bogoychev, Nikolay and
+                  Martins, Andr\'{e} F. T. and Birch, Alexandra},
       booktitle = {Proceedings of ACL 2018, System Demonstrations},
       pages     = {116--121},
       publisher = {Association for Computational Linguistics},
@@ -63,6 +65,7 @@ Results:
       address   = {Melbourne, Australia},
       url       = {http://www.aclweb.org/anthology/P18-4020}
   }
+  ```
 
 ## Note
 
