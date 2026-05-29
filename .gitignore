@@ -1,2 +1,6 @@
+# cache
 __pycache__/
 .ipynb_checkpoints/
+
+# large model files
+*.npz

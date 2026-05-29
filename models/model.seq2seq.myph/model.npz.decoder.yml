@@ -1,0 +1,12 @@
+relative-paths: false
+models:
+  - ../models/model.seq2seq.myph/model.npz
+vocabs:
+  - ../data/vocab/vocab.my.yml
+  - ../data/vocab/vocab.ph.yml
+beam-size: 12
+normalize: 0
+word-penalty: 0
+mini-batch: 32
+maxi-batch: 100
+maxi-batch-sort: src

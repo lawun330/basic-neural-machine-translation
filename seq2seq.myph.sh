@@ -7,9 +7,10 @@
 
 ## Reference: https://marian-nmt.github.io/examples/mtm2017/complex/
 
-model_folder="models/model.seq2seq.phmy";
+model_folder="../models/model.seq2seq.myph"; # -- MODIFIED --
 mkdir ${model_folder};
-data_path="$(pwd)/data/cleaned"; # -- MODIFIED --
+data_path="../data/cleaned"; # -- MODIFIED --
+vocab_path="../data/vocab"; # -- MODIFIED --
 src="my"; tgt="ph"; # -- MODIFIED --
 
 marian \
@@ -17,7 +18,7 @@ marian \
   --train-sets ${data_path}/train.${src} ${data_path}/train.${tgt} \
   --max-length 200 \
   --valid-sets ${data_path}/dev.${src} ${data_path}/dev.${tgt} \
-  --vocabs  ${data_path}/vocab/vocab.${src}.yml  ${data_path}/vocab/vocab.${tgt}.yml \
+  --vocabs  ${vocab_path}/vocab.${src}.yml  ${vocab_path}/vocab.${tgt}.yml \
   --model ${model_folder}/model.npz \
   --workspace 500 \
   --enc-depth 2 --enc-type alternating --enc-cell lstm --enc-cell-depth 2 \
