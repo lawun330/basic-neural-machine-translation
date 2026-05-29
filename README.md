@@ -2,20 +2,29 @@
 
 ## Overview
 
-This project implements a basic SMT system for Burmese grapheme-to-phoneme (G2P) translation using established SMT toolkits such as Moses, GIZA++, and MGIZA, along with custom preprocessing scripts for data normalization and preparation.
+This project implements a basic NMT system for Burmese grapheme-to-phoneme (G2P) translation using an established toolkit such as Marian NMT, along with custom preprocessing scripts for data normalization.
 
-The workflow covers the full SMT pipeline from data normalization and SGM file generation to training, decoding, and evaluation. Multiple experiments are documented with varying settings. BLEU scores and translation outputs are systematically logged and summarized for comparative analysis.
+The workflow covers the full NMT pipeline from data normalization, training, and evaluation. Multiple experiments are documented with varying settings. BLEU scores and translation outputs are systematically logged and summarized for comparative analysis.
 
-## Error-Free PBSMT Workflow
+## Error-Free NMT Workflow
 
 - Use Ubuntu-native Perl v5.38
-- Install Marian and dependencies (nvcc, gcc-11, nvidia-smi)
+- Install Marian NMT and dependencies (nvcc, gcc-11, nvidia-smi)
 - Optionally configure paths in 
-    - seq2seq.phmy.sh
-- 
+    - seq2seq.myph.sh
+    - transformer.myph.sh
 
 ## Experiments
 
+### Sequence-to-Sequence Model
+1. **Seq2Seq run1** ([nmt_seq2seq_v1](notebooks/nmt_seq2seq_v1.ipynb) => models/model.seq2seq.myph/baseline/): default settings
+2. **Seq2Seq run2** ([nmt_seq2seq_v2](notebooks/nmt_seq2seq_v2.ipynb) => models/model.seq2seq.myph/change1/): changes placeholder
+3. **Seq2Seq run3** ([nmt_seq2seq_v3](notebooks/nmt_seq2seq_v3.ipynb) => models/model.seq2seq.myph/change2/): changes placeholder
+
+### Transformer Model
+1. **Transformer run1** ([nmt_transformer_v1](notebooks/nmt_transformer_v1.ipynb) => models/model.transformer.myph/baseline/): default settings
+2. **Transformer run2** ([nmt_transformer_v2](notebooks/nmt_transformer_v2.ipynb) => models/model.transformer.myph/change1/): changes placeholder
+3. **Transformer run3** ([nmt_transformer_v3](notebooks/nmt_transformer_v3.ipynb) => models/model.transformer.myph/change2/): changes placeholders
 
 Summary: [presentation slides](presentation_slides.pdf)
 
@@ -36,14 +45,16 @@ Results:
 ├── models/
 ├── summary/
 │
-│
 ├── data/
 │   ├── g2p-par/                    # originally Sayar's
 │   ├── cleaned/                    # preprocessed data (version 1)
+│   ├── vocab/
 │   └── logs/
 │
-├── syl-normalizer/     # originally Sayar's # modified to merge with previous token for athat (်) cases
-└── seq2seq.myph.sh     # originally Sayar's # modified paths
+├── syl-normalizer/         # originally Sayar's # modified to merge with previous token for athat (်) cases
+├── seq2seq.myph.sh         # originally Sayar's # modified paths
+└── transformer.myph.sh     # originally Sayar's # modified paths
+
 ```
 
 ## References
