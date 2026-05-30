@@ -7,7 +7,7 @@
 
 ## Reference: https://marian-nmt.github.io/examples/mtm2017/complex/
 
-model_folder="../models/model.seq2seq.myph"; # -- MODIFIED --
+model_folder="../models/baseline.seq2seq.myph"; # -- MODIFIED --
 mkdir ${model_folder};
 data_path="../data/cleaned"; # -- MODIFIED --
 vocab_path="../data/vocab"; # -- MODIFIED --

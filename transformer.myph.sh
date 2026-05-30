@@ -5,7 +5,7 @@
 ## used Marian NMT Framework for transformer training
 ## Last updated: 23 May 2022
 
-model_folder="../models/model.transformer.myph"; # -- MODIFIED --
+model_folder="../models/baseline.transformer.myph"; # -- MODIFIED --
 mkdir ${model_folder};
 data_path="../data/cleaned"; # -- MODIFIED --
 vocab_path="../data/vocab"; # -- MODIFIED --
@@ -35,7 +35,7 @@ marian \
   --valid-mini-batch 64 \
   --valid-metrics cross-entropy perplexity bleu\
   --valid-freq 5000 --save-freq 5000 --disp-freq 500 \
-  --early-stopping 10 \
+  --early-stopping 5 \
   --log ${model_folder}/train.log --valid-log ${model_folder}/valid.log \
   --devices 0 --sync-sgd --seed 1111 \
   --dump-config > ${model_folder}/config.yml \
