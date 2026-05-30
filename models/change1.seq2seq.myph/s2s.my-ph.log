@@ -1,0 +1,728 @@
+[2026-05-30 10:47:53] [marian] Marian v1.12.0 65bf82ff 2023-02-21 09:56:29 -0800
+[2026-05-30 10:47:53] [marian] Running on ROG-Strix-Hero-II as process 14582 with command line:
+[2026-05-30 10:47:53] [marian] marian -c ../models/change1.seq2seq.myph/config.yml
+[2026-05-30 10:47:53] [config] after: 0e
+[2026-05-30 10:47:53] [config] after-batches: 0
+[2026-05-30 10:47:53] [config] after-epochs: 0
+[2026-05-30 10:47:53] [config] all-caps-every: 0
+[2026-05-30 10:47:53] [config] allow-unk: false
+[2026-05-30 10:47:53] [config] authors: false
+[2026-05-30 10:47:53] [config] beam-size: 12
+[2026-05-30 10:47:53] [config] bert-class-symbol: "[CLS]"
+[2026-05-30 10:47:53] [config] bert-mask-symbol: "[MASK]"
+[2026-05-30 10:47:53] [config] bert-masking-fraction: 0.15
+[2026-05-30 10:47:53] [config] bert-sep-symbol: "[SEP]"
+[2026-05-30 10:47:53] [config] bert-train-type-embeddings: true
+[2026-05-30 10:47:53] [config] bert-type-vocab-size: 2
+[2026-05-30 10:47:53] [config] build-info: ""
+[2026-05-30 10:47:53] [config] check-gradient-nan: false
+[2026-05-30 10:47:53] [config] check-nan: false
+[2026-05-30 10:47:53] [config] cite: false
+[2026-05-30 10:47:53] [config] clip-norm: 1
+[2026-05-30 10:47:53] [config] cost-scaling:
+[2026-05-30 10:47:53] [config]   []
+[2026-05-30 10:47:53] [config] cost-type: ce-sum
+[2026-05-30 10:47:53] [config] cpu-threads: 0
+[2026-05-30 10:47:53] [config] data-threads: 8
+[2026-05-30 10:47:53] [config] data-weighting: ""
+[2026-05-30 10:47:53] [config] data-weighting-type: sentence
+[2026-05-30 10:47:53] [config] dec-cell: lstm
+[2026-05-30 10:47:53] [config] dec-cell-base-depth: 2
+[2026-05-30 10:47:53] [config] dec-cell-high-depth: 2
+[2026-05-30 10:47:53] [config] dec-depth: 2
+[2026-05-30 10:47:53] [config] devices:
+[2026-05-30 10:47:53] [config]   - 0
+[2026-05-30 10:47:53] [config] dim-emb: 512
+[2026-05-30 10:47:53] [config] dim-rnn: 1024
+[2026-05-30 10:47:53] [config] dim-vocabs:
+[2026-05-30 10:47:53] [config]   - 0
+[2026-05-30 10:47:53] [config]   - 0
+[2026-05-30 10:47:53] [config] disp-first: 0
+[2026-05-30 10:47:53] [config] disp-freq: 500
+[2026-05-30 10:47:53] [config] disp-label-counts: true
+[2026-05-30 10:47:53] [config] dropout-rnn: 0.3
+[2026-05-30 10:47:53] [config] dropout-src: 0.3
+[2026-05-30 10:47:53] [config] dropout-trg: 0
+[2026-05-30 10:47:53] [config] dump-config: ""
+[2026-05-30 10:47:53] [config] dynamic-gradient-scaling:
+[2026-05-30 10:47:53] [config]   []
+[2026-05-30 10:47:53] [config] early-stopping: 5
+[2026-05-30 10:47:53] [config] early-stopping-on: first
+[2026-05-30 10:47:53] [config] embedding-fix-src: false
+[2026-05-30 10:47:53] [config] embedding-fix-trg: false
+[2026-05-30 10:47:53] [config] embedding-normalization: false
+[2026-05-30 10:47:53] [config] embedding-vectors:
+[2026-05-30 10:47:53] [config]   []
+[2026-05-30 10:47:53] [config] enc-cell: lstm
+[2026-05-30 10:47:53] [config] enc-cell-depth: 2
+[2026-05-30 10:47:53] [config] enc-depth: 2
+[2026-05-30 10:47:53] [config] enc-type: alternating
+[2026-05-30 10:47:53] [config] english-title-case-every: 0
+[2026-05-30 10:47:53] [config] exponential-smoothing: 0.0001
+[2026-05-30 10:47:53] [config] factor-weight: 1
+[2026-05-30 10:47:53] [config] factors-combine: sum
+[2026-05-30 10:47:53] [config] factors-dim-emb: 0
+[2026-05-30 10:47:53] [config] gradient-checkpointing: false
+[2026-05-30 10:47:53] [config] gradient-norm-average-window: 100
+[2026-05-30 10:47:53] [config] guided-alignment: none
+[2026-05-30 10:47:53] [config] guided-alignment-cost: ce
+[2026-05-30 10:47:53] [config] guided-alignment-weight: 0.1
+[2026-05-30 10:47:53] [config] ignore-model-config: false
+[2026-05-30 10:47:53] [config] input-types:
+[2026-05-30 10:47:53] [config]   []
+[2026-05-30 10:47:53] [config] interpolate-env-vars: false
+[2026-05-30 10:47:53] [config] keep-best: false
+[2026-05-30 10:47:53] [config] label-smoothing: 0
+[2026-05-30 10:47:53] [config] layer-normalization: true
+[2026-05-30 10:47:53] [config] learn-rate: 0.0001
+[2026-05-30 10:47:53] [config] lemma-dependency: ""
+[2026-05-30 10:47:53] [config] lemma-dim-emb: 0
+[2026-05-30 10:47:53] [config] log: ../models/change1.seq2seq.myph/train.log
+[2026-05-30 10:47:53] [config] log-level: info
+[2026-05-30 10:47:53] [config] log-time-zone: ""
+[2026-05-30 10:47:53] [config] logical-epoch:
+[2026-05-30 10:47:53] [config]   - 1e
+[2026-05-30 10:47:53] [config]   - 0
+[2026-05-30 10:47:53] [config] lr-decay: 0
+[2026-05-30 10:47:53] [config] lr-decay-freq: 50000
+[2026-05-30 10:47:53] [config] lr-decay-inv-sqrt:
+[2026-05-30 10:47:53] [config]   - 0
+[2026-05-30 10:47:53] [config] lr-decay-repeat-warmup: false
+[2026-05-30 10:47:53] [config] lr-decay-reset-optimizer: false
+[2026-05-30 10:47:53] [config] lr-decay-start:
+[2026-05-30 10:47:53] [config]   - 10
+[2026-05-30 10:47:53] [config]   - 1
+[2026-05-30 10:47:53] [config] lr-decay-strategy: epoch+stalled
+[2026-05-30 10:47:53] [config] lr-report: false
+[2026-05-30 10:47:53] [config] lr-warmup: 0
+[2026-05-30 10:47:53] [config] lr-warmup-at-reload: false
+[2026-05-30 10:47:53] [config] lr-warmup-cycle: false
+[2026-05-30 10:47:53] [config] lr-warmup-start-rate: 0
+[2026-05-30 10:47:53] [config] max-length: 200
+[2026-05-30 10:47:53] [config] max-length-crop: false
+[2026-05-30 10:47:53] [config] max-length-factor: 3
+[2026-05-30 10:47:53] [config] maxi-batch: 100
+[2026-05-30 10:47:53] [config] maxi-batch-sort: trg
+[2026-05-30 10:47:53] [config] mini-batch: 64
+[2026-05-30 10:47:53] [config] mini-batch-fit: true
+[2026-05-30 10:47:53] [config] mini-batch-fit-step: 10
+[2026-05-30 10:47:53] [config] mini-batch-round-up: true
+[2026-05-30 10:47:53] [config] mini-batch-track-lr: false
+[2026-05-30 10:47:53] [config] mini-batch-warmup: 0
+[2026-05-30 10:47:53] [config] mini-batch-words: 0
+[2026-05-30 10:47:53] [config] mini-batch-words-ref: 0
+[2026-05-30 10:47:53] [config] model: ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 10:47:53] [config] multi-loss-type: sum
+[2026-05-30 10:47:53] [config] n-best: false
+[2026-05-30 10:47:53] [config] no-nccl: false
+[2026-05-30 10:47:53] [config] no-reload: false
+[2026-05-30 10:47:53] [config] no-restore-corpus: false
+[2026-05-30 10:47:53] [config] normalize: 0
+[2026-05-30 10:47:53] [config] normalize-gradient: false
+[2026-05-30 10:47:53] [config] num-devices: 0
+[2026-05-30 10:47:53] [config] optimizer: adam
+[2026-05-30 10:47:53] [config] optimizer-delay: 1
+[2026-05-30 10:47:53] [config] optimizer-params:
+[2026-05-30 10:47:53] [config]   []
+[2026-05-30 10:47:53] [config] output-omit-bias: false
+[2026-05-30 10:47:53] [config] overwrite: false
+[2026-05-30 10:47:53] [config] precision:
+[2026-05-30 10:47:53] [config]   - float32
+[2026-05-30 10:47:53] [config]   - float32
+[2026-05-30 10:47:53] [config] pretrained-model: ""
+[2026-05-30 10:47:53] [config] quantize-biases: false
+[2026-05-30 10:47:53] [config] quantize-bits: 0
+[2026-05-30 10:47:53] [config] quantize-log-based: false
+[2026-05-30 10:47:53] [config] quantize-optimization-steps: 0
+[2026-05-30 10:47:53] [config] quiet: false
+[2026-05-30 10:47:53] [config] quiet-translation: false
+[2026-05-30 10:47:53] [config] relative-paths: false
+[2026-05-30 10:47:53] [config] right-left: false
+[2026-05-30 10:47:53] [config] save-freq: 1000
+[2026-05-30 10:47:53] [config] seed: 1111
+[2026-05-30 10:47:53] [config] sentencepiece-alphas:
+[2026-05-30 10:47:53] [config]   []
+[2026-05-30 10:47:53] [config] sentencepiece-max-lines: 2000000
+[2026-05-30 10:47:53] [config] sentencepiece-options: ""
+[2026-05-30 10:47:53] [config] sharding: global
+[2026-05-30 10:47:53] [config] shuffle: data
+[2026-05-30 10:47:53] [config] shuffle-in-ram: false
+[2026-05-30 10:47:53] [config] sigterm: save-and-exit
+[2026-05-30 10:47:53] [config] skip: true
+[2026-05-30 10:47:53] [config] sqlite: ""
+[2026-05-30 10:47:53] [config] sqlite-drop: false
+[2026-05-30 10:47:53] [config] sync-freq: 200u
+[2026-05-30 10:47:53] [config] sync-sgd: true
+[2026-05-30 10:47:53] [config] tempdir: /tmp
+[2026-05-30 10:47:53] [config] tied-embeddings: true
+[2026-05-30 10:47:53] [config] tied-embeddings-all: false
+[2026-05-30 10:47:53] [config] tied-embeddings-src: false
+[2026-05-30 10:47:53] [config] train-embedder-rank:
+[2026-05-30 10:47:53] [config]   []
+[2026-05-30 10:47:53] [config] train-sets:
+[2026-05-30 10:47:53] [config]   - ../data/cleaned/train.my
+[2026-05-30 10:47:53] [config]   - ../data/cleaned/train.ph
+[2026-05-30 10:47:53] [config] transformer-aan-activation: swish
+[2026-05-30 10:47:53] [config] transformer-aan-depth: 2
+[2026-05-30 10:47:53] [config] transformer-aan-nogate: false
+[2026-05-30 10:47:53] [config] transformer-decoder-autoreg: self-attention
+[2026-05-30 10:47:53] [config] transformer-decoder-dim-ffn: 0
+[2026-05-30 10:47:53] [config] transformer-decoder-ffn-depth: 0
+[2026-05-30 10:47:53] [config] transformer-depth-scaling: false
+[2026-05-30 10:47:53] [config] transformer-dim-aan: 2048
+[2026-05-30 10:47:53] [config] transformer-dim-ffn: 2048
+[2026-05-30 10:47:53] [config] transformer-dropout: 0
+[2026-05-30 10:47:53] [config] transformer-dropout-attention: 0
+[2026-05-30 10:47:53] [config] transformer-dropout-ffn: 0
+[2026-05-30 10:47:53] [config] transformer-ffn-activation: swish
+[2026-05-30 10:47:53] [config] transformer-ffn-depth: 2
+[2026-05-30 10:47:53] [config] transformer-guided-alignment-layer: last
+[2026-05-30 10:47:53] [config] transformer-heads: 8
+[2026-05-30 10:47:53] [config] transformer-no-projection: false
+[2026-05-30 10:47:53] [config] transformer-pool: false
+[2026-05-30 10:47:53] [config] transformer-postprocess: dan
+[2026-05-30 10:47:53] [config] transformer-postprocess-emb: d
+[2026-05-30 10:47:53] [config] transformer-postprocess-top: ""
+[2026-05-30 10:47:53] [config] transformer-preprocess: ""
+[2026-05-30 10:47:53] [config] transformer-rnn-projection: false
+[2026-05-30 10:47:53] [config] transformer-tied-layers:
+[2026-05-30 10:47:53] [config]   []
+[2026-05-30 10:47:53] [config] transformer-train-position-embeddings: false
+[2026-05-30 10:47:53] [config] tsv: false
+[2026-05-30 10:47:53] [config] tsv-fields: 0
+[2026-05-30 10:47:53] [config] type: s2s
+[2026-05-30 10:47:53] [config] ulr: false
+[2026-05-30 10:47:53] [config] ulr-dim-emb: 0
+[2026-05-30 10:47:53] [config] ulr-dropout: 0
+[2026-05-30 10:47:53] [config] ulr-keys-vectors: ""
+[2026-05-30 10:47:53] [config] ulr-query-vectors: ""
+[2026-05-30 10:47:53] [config] ulr-softmax-temperature: 1
+[2026-05-30 10:47:53] [config] ulr-trainable-transformation: false
+[2026-05-30 10:47:53] [config] unlikelihood-loss: false
+[2026-05-30 10:47:53] [config] valid-freq: 1000
+[2026-05-30 10:47:53] [config] valid-log: ../models/change1.seq2seq.myph/valid.log
+[2026-05-30 10:47:53] [config] valid-max-length: 1000
+[2026-05-30 10:47:53] [config] valid-metrics:
+[2026-05-30 10:47:53] [config]   - cross-entropy
+[2026-05-30 10:47:53] [config]   - perplexity
+[2026-05-30 10:47:53] [config]   - bleu
+[2026-05-30 10:47:53] [config] valid-mini-batch: 32
+[2026-05-30 10:47:53] [config] valid-reset-all: false
+[2026-05-30 10:47:53] [config] valid-reset-stalled: false
+[2026-05-30 10:47:53] [config] valid-script-args:
+[2026-05-30 10:47:53] [config]   []
+[2026-05-30 10:47:53] [config] valid-script-path: ""
+[2026-05-30 10:47:53] [config] valid-sets:
+[2026-05-30 10:47:53] [config]   - ../data/cleaned/dev.my
+[2026-05-30 10:47:53] [config]   - ../data/cleaned/dev.ph
+[2026-05-30 10:47:53] [config] valid-translation-output: ""
+[2026-05-30 10:47:53] [config] vocabs:
+[2026-05-30 10:47:53] [config]   - ../data/vocab/vocab.my.yml
+[2026-05-30 10:47:53] [config]   - ../data/vocab/vocab.ph.yml
+[2026-05-30 10:47:53] [config] word-penalty: 0
+[2026-05-30 10:47:53] [config] word-scores: false
+[2026-05-30 10:47:53] [config] workspace: 500
+[2026-05-30 10:47:53] [config] Model is being created with Marian v1.12.0 65bf82ff 2023-02-21 09:56:29 -0800
+[2026-05-30 10:47:53] Using synchronous SGD
+[2026-05-30 10:47:53] [comm] Compiled without MPI support. Running as a single process on ROG-Strix-Hero-II
+[2026-05-30 10:47:53] Synced seed 1111
+[2026-05-30 10:47:53] [data] Loading vocabulary from JSON/Yaml file ../data/vocab/vocab.my.yml
+[2026-05-30 10:47:53] [data] Setting vocabulary size for input 0 to 2,305
+[2026-05-30 10:47:53] [data] Loading vocabulary from JSON/Yaml file ../data/vocab/vocab.ph.yml
+[2026-05-30 10:47:53] [data] Setting vocabulary size for input 1 to 1,851
+[2026-05-30 10:47:53] [batching] Collecting statistics for batch fitting with step size 10
+[2026-05-30 10:47:53] [memory] Extending reserved space to 512 MB (device gpu0)
+[2026-05-30 10:47:53] [comm] Using NCCL 2.8.3 for GPU communication
+[2026-05-30 10:47:53] [comm] Using global sharding
+[2026-05-30 10:47:53] [comm] NCCLCommunicators constructed successfully
+[2026-05-30 10:47:53] [training] Using 1 GPUs
+[2026-05-30 10:47:53] [logits] Applying loss function for 1 factor(s)
+[2026-05-30 10:47:53] [memory] Reserving 343 MB, device gpu0
+[2026-05-30 10:47:53] [gpu] 16-bit TensorCores enabled for float32 matrix operations
+[2026-05-30 10:47:53] [memory] Reserving 343 MB, device gpu0
+[2026-05-30 10:48:40] [batching] Done. Typical MB size is 516 target words
+[2026-05-30 10:48:40] [memory] Extending reserved space to 512 MB (device gpu0)
+[2026-05-30 10:48:40] [comm] Using NCCL 2.8.3 for GPU communication
+[2026-05-30 10:48:40] [comm] Using global sharding
+[2026-05-30 10:48:40] [comm] NCCLCommunicators constructed successfully
+[2026-05-30 10:48:40] [training] Using 1 GPUs
+[2026-05-30 10:48:40] Training started
+[2026-05-30 10:48:40] [data] Shuffling data
+[2026-05-30 10:48:40] [data] Done reading 20,000 sentences
+[2026-05-30 10:48:40] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 10:48:41] [training] Batches are processed as 1 process(es) x 1 devices/process
+[2026-05-30 10:48:41] [memory] Reserving 343 MB, device gpu0
+[2026-05-30 10:48:41] [memory] Reserving 343 MB, device gpu0
+[2026-05-30 10:48:41] Parameter type float32, optimization type float32, casting types false
+[2026-05-30 10:48:41] Allocating memory for general optimizer shards
+[2026-05-30 10:48:41] [memory] Reserving 343 MB, device gpu0
+[2026-05-30 10:48:41] Allocating memory for Adam-specific shards
+[2026-05-30 10:48:41] [memory] Reserving 687 MB, device gpu0
+[2026-05-30 10:49:32] Seen 20,000 samples
+[2026-05-30 10:49:32] Starting data epoch 2 in logical epoch 2
+[2026-05-30 10:49:32] [data] Shuffling data
+[2026-05-30 10:49:32] [data] Done reading 20,000 sentences
+[2026-05-30 10:49:32] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 10:50:01] Ep. 2 : Up. 500 : Sen. 7,335 : Cost 5.14629793 * 105,800 @ 275 after 105,800 : Time 80.42s : 1315.62 words/s : gNorm 10.3762
+[2026-05-30 10:50:50] Seen 20,000 samples
+[2026-05-30 10:50:50] Starting data epoch 3 in logical epoch 3
+[2026-05-30 10:50:50] [data] Shuffling data
+[2026-05-30 10:50:50] [data] Done reading 20,000 sentences
+[2026-05-30 10:50:50] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 10:51:52] Ep. 3 : Up. 1000 : Sen. 14,670 : Cost 3.88307333 * 106,217 @ 258 after 212,017 : Time 111.06s : 956.41 words/s : gNorm 9.1146
+[2026-05-30 10:51:52] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter1000.npz
+[2026-05-30 10:51:53] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 10:51:55] Saving Adam parameters
+[2026-05-30 10:51:59] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 10:52:05] [valid] Ep. 3 : Up. 1000 : cross-entropy : 9.69313 : new best
+[2026-05-30 10:52:06] [valid] Ep. 3 : Up. 1000 : perplexity : 12.4488 : new best
+[2026-05-30 10:52:06] Translating validation set...
+[2026-05-30 10:52:06] [valid] First sentence's tokens as scored:
+[2026-05-30 10:52:06] [valid] DefaultVocab keeps original segments for scoring
+[2026-05-30 10:52:06] [valid]   Hyp: ga- ta- ja- ma- ja.
+[2026-05-30 10:52:06] [valid]   Ref: ou' ta- ra. hpa- la. gu. ni
+[2026-05-30 10:52:06] Best translation 0 : ja' ta- ja mhu.
+[2026-05-30 10:52:07] Best translation 1 : pji: hsei:
+[2026-05-30 10:52:07] Best translation 2 : mjin: za: jei
+[2026-05-30 10:52:07] Best translation 3 : a- kyaun: pei:
+[2026-05-30 10:52:07] Best translation 4 : a- nei a- hta:
+[2026-05-30 10:52:07] Best translation 5 : za- ga: hswe: mi.
+[2026-05-30 10:52:07] Best translation 10 : hta- min: dha:
+[2026-05-30 10:52:07] Best translation 20 : si' si'
+[2026-05-30 10:52:07] Best translation 40 : ou' tai'
+[2026-05-30 10:52:07] Best translation 80 : we' thi' cha.
+[2026-05-30 10:52:07] Best translation 160 : nhi' ba- za'
+[2026-05-30 10:52:07] Best translation 320 : a- man
+[2026-05-30 10:52:08] Best translation 640 : a- jei: pja.
+[2026-05-30 10:52:09] Best translation 1280 : sai' win
+[2026-05-30 10:52:10] Total translation time: 3.44468s
+[2026-05-30 10:52:10] [valid] Ep. 3 : Up. 1000 : bleu : 15.0943 : new best
+[2026-05-30 10:52:28] Seen 20,000 samples
+[2026-05-30 10:52:28] Starting data epoch 4 in logical epoch 4
+[2026-05-30 10:52:28] [data] Shuffling data
+[2026-05-30 10:52:28] [data] Done reading 20,000 sentences
+[2026-05-30 10:52:28] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 10:54:11] Seen 20,000 samples
+[2026-05-30 10:54:11] Starting data epoch 5 in logical epoch 5
+[2026-05-30 10:54:11] [data] Shuffling data
+[2026-05-30 10:54:11] [data] Done reading 20,000 sentences
+[2026-05-30 10:54:11] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 10:54:21] Ep. 5 : Up. 1500 : Sen. 1,925 : Cost 2.67108417 * 104,650 @ 165 after 316,667 : Time 149.66s : 699.26 words/s : gNorm 4.9787
+[2026-05-30 10:55:56] Seen 20,000 samples
+[2026-05-30 10:55:56] Starting data epoch 6 in logical epoch 6
+[2026-05-30 10:55:56] [data] Shuffling data
+[2026-05-30 10:55:56] [data] Done reading 20,000 sentences
+[2026-05-30 10:55:56] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 10:56:48] Ep. 6 : Up. 2000 : Sen. 9,252 : Cost 2.03947759 * 105,908 @ 220 after 422,575 : Time 147.05s : 720.20 words/s : gNorm 3.4633
+[2026-05-30 10:56:48] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter2000.npz
+[2026-05-30 10:56:50] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 10:56:52] Saving Adam parameters
+[2026-05-30 10:56:56] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 10:57:11] [valid] Ep. 6 : Up. 2000 : cross-entropy : 3.23071 : new best
+[2026-05-30 10:57:13] [valid] Ep. 6 : Up. 2000 : perplexity : 2.31742 : new best
+[2026-05-30 10:57:13] Translating validation set...
+[2026-05-30 10:57:13] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 10:57:13] Best translation 1 : pji: zei:
+[2026-05-30 10:57:13] Best translation 2 : mjin: sa: za:
+[2026-05-30 10:57:13] Best translation 3 : a- ngan. pei:
+[2026-05-30 10:57:13] Best translation 4 : a- nei a- hta:
+[2026-05-30 10:57:13] Best translation 5 : kya: mji: hswe: mi.
+[2026-05-30 10:57:13] Best translation 10 : hta- min: hsou'
+[2026-05-30 10:57:13] Best translation 20 : si' njaun:
+[2026-05-30 10:57:13] Best translation 40 : ou' tai'
+[2026-05-30 10:57:13] Best translation 80 : we' thi' cha.
+[2026-05-30 10:57:13] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 10:57:14] Best translation 320 : a- mjoun
+[2026-05-30 10:57:14] Best translation 640 : a- swan: pja.
+[2026-05-30 10:57:16] Best translation 1280 : sai' gwa.
+[2026-05-30 10:57:17] Total translation time: 3.75153s
+[2026-05-30 10:57:17] [valid] Ep. 6 : Up. 2000 : bleu : 54.8122 : new best
+[2026-05-30 10:58:16] Seen 20,000 samples
+[2026-05-30 10:58:16] Starting data epoch 7 in logical epoch 7
+[2026-05-30 10:58:16] [data] Shuffling data
+[2026-05-30 10:58:16] [data] Done reading 20,000 sentences
+[2026-05-30 10:58:16] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 10:59:49] Ep. 7 : Up. 2500 : Sen. 16,568 : Cost 1.82514930 * 105,359 @ 220 after 527,934 : Time 180.91s : 582.39 words/s : gNorm 3.4182
+[2026-05-30 11:00:05] Seen 20,000 samples
+[2026-05-30 11:00:05] Starting data epoch 8 in logical epoch 8
+[2026-05-30 11:00:05] [data] Shuffling data
+[2026-05-30 11:00:05] [data] Done reading 20,000 sentences
+[2026-05-30 11:00:05] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:02:09] Seen 20,000 samples
+[2026-05-30 11:02:09] Starting data epoch 9 in logical epoch 9
+[2026-05-30 11:02:09] [data] Shuffling data
+[2026-05-30 11:02:09] [data] Done reading 20,000 sentences
+[2026-05-30 11:02:09] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:02:40] Ep. 9 : Up. 3000 : Sen. 3,870 : Cost 1.56285596 * 105,882 @ 165 after 633,816 : Time 170.57s : 620.77 words/s : gNorm 2.4888
+[2026-05-30 11:02:40] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter3000.npz
+[2026-05-30 11:02:41] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:02:45] Saving Adam parameters
+[2026-05-30 11:02:49] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 11:03:10] [valid] Ep. 9 : Up. 3000 : cross-entropy : 2.16207 : new best
+[2026-05-30 11:03:12] [valid] Ep. 9 : Up. 3000 : perplexity : 1.75497 : new best
+[2026-05-30 11:03:12] Translating validation set...
+[2026-05-30 11:03:12] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 11:03:13] Best translation 1 : pji: zei:
+[2026-05-30 11:03:13] Best translation 2 : mjin: sa: za:
+[2026-05-30 11:03:13] Best translation 3 : a- ngan. pei:
+[2026-05-30 11:03:13] Best translation 4 : a- nei a- hta:
+[2026-05-30 11:03:13] Best translation 5 : kya: mi: zwe: mi.
+[2026-05-30 11:03:13] Best translation 10 : hta- min: hsou'
+[2026-05-30 11:03:13] Best translation 20 : si' njaun:
+[2026-05-30 11:03:13] Best translation 40 : ou' tai'
+[2026-05-30 11:03:13] Best translation 80 : we' thi' cha.
+[2026-05-30 11:03:13] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 11:03:13] Best translation 320 : a- mjoun
+[2026-05-30 11:03:13] Best translation 640 : a- swan: pja.
+[2026-05-30 11:03:15] Best translation 1280 : sai' gwa.
+[2026-05-30 11:03:16] Total translation time: 3.47286s
+[2026-05-30 11:03:16] [valid] Ep. 9 : Up. 3000 : bleu : 61.9581 : new best
+[2026-05-30 11:05:00] Seen 20,000 samples
+[2026-05-30 11:05:00] Starting data epoch 10 in logical epoch 10
+[2026-05-30 11:05:00] [data] Shuffling data
+[2026-05-30 11:05:00] [data] Done reading 20,000 sentences
+[2026-05-30 11:05:00] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:06:21] Ep. 10 : Up. 3500 : Sen. 11,205 : Cost 1.38804054 * 105,422 @ 220 after 739,238 : Time 221.29s : 476.40 words/s : gNorm 2.3764
+[2026-05-30 11:07:21] Seen 20,000 samples
+[2026-05-30 11:07:21] Starting data epoch 11 in logical epoch 11
+[2026-05-30 11:07:21] [data] Shuffling data
+[2026-05-30 11:07:21] [data] Done reading 20,000 sentences
+[2026-05-30 11:07:21] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:09:36] Ep. 11 : Up. 4000 : Sen. 18,540 : Cost 1.46749759 * 105,475 @ 165 after 844,713 : Time 194.95s : 541.03 words/s : gNorm 2.2182
+[2026-05-30 11:09:36] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter4000.npz
+[2026-05-30 11:09:37] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:09:40] Saving Adam parameters
+[2026-05-30 11:09:43] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 11:09:49] [valid] Ep. 11 : Up. 4000 : cross-entropy : 1.84294 : new best
+[2026-05-30 11:09:51] [valid] Ep. 11 : Up. 4000 : perplexity : 1.61516 : new best
+[2026-05-30 11:09:51] Translating validation set...
+[2026-05-30 11:09:51] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 11:09:52] Best translation 1 : pji: zei:
+[2026-05-30 11:09:52] Best translation 2 : mjin: za: gyoun
+[2026-05-30 11:09:52] Best translation 3 : a- ngan. pei:
+[2026-05-30 11:09:52] Best translation 4 : a- nei a- hta:
+[2026-05-30 11:09:52] Best translation 5 : kya: mi: zwe: mi.
+[2026-05-30 11:09:52] Best translation 10 : hta- min: hsou'
+[2026-05-30 11:09:52] Best translation 20 : si' njaun:
+[2026-05-30 11:09:52] Best translation 40 : ou' tai'
+[2026-05-30 11:09:52] Best translation 80 : we' thi' cha.
+[2026-05-30 11:09:52] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 11:09:52] Best translation 320 : a- mjoun
+[2026-05-30 11:09:52] Best translation 640 : a- swan: pja.
+[2026-05-30 11:09:54] Best translation 1280 : sai' khwa.
+[2026-05-30 11:09:54] Total translation time: 3.50229s
+[2026-05-30 11:09:54] [valid] Ep. 11 : Up. 4000 : bleu : 66.3071 : new best
+[2026-05-30 11:10:05] Seen 20,000 samples
+[2026-05-30 11:10:05] Starting data epoch 12 in logical epoch 12
+[2026-05-30 11:10:05] [data] Shuffling data
+[2026-05-30 11:10:05] [data] Done reading 20,000 sentences
+[2026-05-30 11:10:05] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:12:20] Seen 20,000 samples
+[2026-05-30 11:12:20] Starting data epoch 13 in logical epoch 13
+[2026-05-30 11:12:20] [data] Shuffling data
+[2026-05-30 11:12:20] [data] Done reading 20,000 sentences
+[2026-05-30 11:12:20] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:13:00] Ep. 13 : Up. 4500 : Sen. 5,803 : Cost 1.35034668 * 105,689 @ 165 after 950,402 : Time 204.16s : 517.67 words/s : gNorm 2.6301
+[2026-05-30 11:14:18] Seen 20,000 samples
+[2026-05-30 11:14:18] Starting data epoch 14 in logical epoch 14
+[2026-05-30 11:14:18] [data] Shuffling data
+[2026-05-30 11:14:18] [data] Done reading 20,000 sentences
+[2026-05-30 11:14:18] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:15:37] Ep. 14 : Up. 5000 : Sen. 13,130 : Cost 1.21440518 * 105,623 @ 165 after 1,056,025 : Time 156.89s : 673.23 words/s : gNorm 2.0212
+[2026-05-30 11:15:37] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter5000.npz
+[2026-05-30 11:15:38] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:15:41] Saving Adam parameters
+[2026-05-30 11:15:45] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 11:15:50] [valid] Ep. 14 : Up. 5000 : cross-entropy : 1.70928 : new best
+[2026-05-30 11:15:52] [valid] Ep. 14 : Up. 5000 : perplexity : 1.55996 : new best
+[2026-05-30 11:15:52] Translating validation set...
+[2026-05-30 11:15:52] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 11:15:52] Best translation 1 : pji: zei:
+[2026-05-30 11:15:52] Best translation 2 : mjin: za: gyoun
+[2026-05-30 11:15:52] Best translation 3 : a- ngan. pei:
+[2026-05-30 11:15:52] Best translation 4 : a- nei a- hta:
+[2026-05-30 11:15:52] Best translation 5 : kya: mi: zwe: mi.
+[2026-05-30 11:15:52] Best translation 10 : hta- min: hsou'
+[2026-05-30 11:15:52] Best translation 20 : si' njaun:
+[2026-05-30 11:15:52] Best translation 40 : ou' tai'
+[2026-05-30 11:15:52] Best translation 80 : we' thi' cha.
+[2026-05-30 11:15:52] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 11:15:53] Best translation 320 : a- mjoun
+[2026-05-30 11:15:53] Best translation 640 : a- swan: pja.
+[2026-05-30 11:15:54] Best translation 1280 : sai' khwa.
+[2026-05-30 11:15:55] Total translation time: 3.46838s
+[2026-05-30 11:15:55] [valid] Ep. 14 : Up. 5000 : bleu : 66.9018 : new best
+[2026-05-30 11:16:37] Seen 20,000 samples
+[2026-05-30 11:16:37] Starting data epoch 15 in logical epoch 15
+[2026-05-30 11:16:37] [data] Shuffling data
+[2026-05-30 11:16:37] [data] Done reading 20,000 sentences
+[2026-05-30 11:16:37] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:18:22] Seen 20,000 samples
+[2026-05-30 11:18:22] Starting data epoch 16 in logical epoch 16
+[2026-05-30 11:18:22] [data] Shuffling data
+[2026-05-30 11:18:22] [data] Done reading 20,000 sentences
+[2026-05-30 11:18:22] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:18:23] Ep. 16 : Up. 5500 : Sen. 440 : Cost 1.13790393 * 105,980 @ 275 after 1,162,005 : Time 165.47s : 640.49 words/s : gNorm 1.9452
+[2026-05-30 11:20:00] Seen 20,000 samples
+[2026-05-30 11:20:00] Starting data epoch 17 in logical epoch 17
+[2026-05-30 11:20:00] [data] Shuffling data
+[2026-05-30 11:20:00] [data] Done reading 20,000 sentences
+[2026-05-30 11:20:00] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:20:44] Ep. 17 : Up. 6000 : Sen. 7,767 : Cost 1.13507116 * 105,453 @ 165 after 1,267,458 : Time 141.69s : 744.28 words/s : gNorm 1.9881
+[2026-05-30 11:20:44] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter6000.npz
+[2026-05-30 11:20:46] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:20:52] Saving Adam parameters
+[2026-05-30 11:20:56] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 11:21:10] [valid] Ep. 17 : Up. 6000 : cross-entropy : 1.65078 : new best
+[2026-05-30 11:21:12] [valid] Ep. 17 : Up. 6000 : perplexity : 1.5364 : new best
+[2026-05-30 11:21:12] Translating validation set...
+[2026-05-30 11:21:12] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 11:21:13] Best translation 1 : pji: zei:
+[2026-05-30 11:21:13] Best translation 2 : mjin: za: gyoun
+[2026-05-30 11:21:13] Best translation 3 : a- ngan. pei:
+[2026-05-30 11:21:13] Best translation 4 : a- nei a- hta:
+[2026-05-30 11:21:13] Best translation 5 : kya: mi: zwe: mi.
+[2026-05-30 11:21:13] Best translation 10 : hta- min: hsou'
+[2026-05-30 11:21:13] Best translation 20 : si' njaun:
+[2026-05-30 11:21:13] Best translation 40 : ou' tai'
+[2026-05-30 11:21:13] Best translation 80 : we' thi' cha.
+[2026-05-30 11:21:13] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 11:21:13] Best translation 320 : a- mjoun
+[2026-05-30 11:21:14] Best translation 640 : a- swan: pja.
+[2026-05-30 11:21:15] Best translation 1280 : sai' khwa.
+[2026-05-30 11:21:16] Total translation time: 3.42159s
+[2026-05-30 11:21:16] [valid] Ep. 17 : Up. 6000 : bleu : 68.8081 : new best
+[2026-05-30 11:22:12] Seen 20,000 samples
+[2026-05-30 11:22:12] Starting data epoch 18 in logical epoch 18
+[2026-05-30 11:22:12] [data] Shuffling data
+[2026-05-30 11:22:12] [data] Done reading 20,000 sentences
+[2026-05-30 11:22:13] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:23:34] Ep. 18 : Up. 6500 : Sen. 15,110 : Cost 1.14072621 * 105,691 @ 165 after 1,373,149 : Time 169.11s : 625.00 words/s : gNorm 2.4382
+[2026-05-30 11:24:00] Seen 20,000 samples
+[2026-05-30 11:24:00] Starting data epoch 19 in logical epoch 19
+[2026-05-30 11:24:00] [data] Shuffling data
+[2026-05-30 11:24:00] [data] Done reading 20,000 sentences
+[2026-05-30 11:24:00] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:25:28] Seen 20,000 samples
+[2026-05-30 11:25:28] Starting data epoch 20 in logical epoch 20
+[2026-05-30 11:25:28] [data] Shuffling data
+[2026-05-30 11:25:28] [data] Done reading 20,000 sentences
+[2026-05-30 11:25:28] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:25:42] Ep. 20 : Up. 7000 : Sen. 2,338 : Cost 1.06552446 * 105,544 @ 165 after 1,478,693 : Time 128.58s : 820.86 words/s : gNorm 2.0884
+[2026-05-30 11:25:42] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter7000.npz
+[2026-05-30 11:25:43] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:25:46] Saving Adam parameters
+[2026-05-30 11:25:50] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 11:25:56] [valid] Ep. 20 : Up. 7000 : cross-entropy : 1.64493 : new best
+[2026-05-30 11:25:57] [valid] Ep. 20 : Up. 7000 : perplexity : 1.53407 : new best
+[2026-05-30 11:25:57] Translating validation set...
+[2026-05-30 11:25:58] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 11:25:58] Best translation 1 : pji: zei:
+[2026-05-30 11:25:58] Best translation 2 : mjin: za: gyoun
+[2026-05-30 11:25:58] Best translation 3 : a- ngan. pei:
+[2026-05-30 11:25:58] Best translation 4 : a- nei a- hta:
+[2026-05-30 11:25:58] Best translation 5 : kya: mi: zwe: mi.
+[2026-05-30 11:25:58] Best translation 10 : hta- min: hsou'
+[2026-05-30 11:25:58] Best translation 20 : si' njaun:
+[2026-05-30 11:25:58] Best translation 40 : ou' tai'
+[2026-05-30 11:25:58] Best translation 80 : we' thi' cha.
+[2026-05-30 11:25:58] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 11:25:58] Best translation 320 : a- mjoun
+[2026-05-30 11:25:59] Best translation 640 : a- swan: pja.
+[2026-05-30 11:26:00] Best translation 1280 : sai' khwa.
+[2026-05-30 11:26:01] Total translation time: 3.43567s
+[2026-05-30 11:26:01] [valid] Ep. 20 : Up. 7000 : bleu : 70.1536 : new best
+[2026-05-30 11:27:19] Seen 20,000 samples
+[2026-05-30 11:27:19] Starting data epoch 21 in logical epoch 21
+[2026-05-30 11:27:19] [data] Shuffling data
+[2026-05-30 11:27:19] [data] Done reading 20,000 sentences
+[2026-05-30 11:27:19] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:28:08] Ep. 21 : Up. 7500 : Sen. 9,673 : Cost 1.06457746 * 105,818 @ 165 after 1,584,511 : Time 146.19s : 723.85 words/s : gNorm 2.1973
+[2026-05-30 11:29:05] Seen 20,000 samples
+[2026-05-30 11:29:05] Starting data epoch 22 in logical epoch 22
+[2026-05-30 11:29:05] [data] Shuffling data
+[2026-05-30 11:29:05] [data] Done reading 20,000 sentences
+[2026-05-30 11:29:05] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:30:28] Ep. 22 : Up. 8000 : Sen. 17,000 : Cost 1.01283658 * 105,350 @ 165 after 1,689,861 : Time 139.97s : 752.67 words/s : gNorm 1.6453
+[2026-05-30 11:30:28] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter8000.npz
+[2026-05-30 11:30:29] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:30:32] Saving Adam parameters
+[2026-05-30 11:30:35] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 11:30:48] [valid] Ep. 22 : Up. 8000 : cross-entropy : 1.65153 : stalled 1 times (last best: 1.64493)
+[2026-05-30 11:30:49] [valid] Ep. 22 : Up. 8000 : perplexity : 1.5367 : stalled 1 times (last best: 1.53407)
+[2026-05-30 11:30:49] Translating validation set...
+[2026-05-30 11:30:49] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 11:30:50] Best translation 1 : pji: zei:
+[2026-05-30 11:30:50] Best translation 2 : mjin: za: gyoun
+[2026-05-30 11:30:50] Best translation 3 : a- ngan. pei:
+[2026-05-30 11:30:50] Best translation 4 : a- nei a- hta:
+[2026-05-30 11:30:50] Best translation 5 : kya: mi: zwe: mi.
+[2026-05-30 11:30:50] Best translation 10 : hta- min: hsou'
+[2026-05-30 11:30:50] Best translation 20 : si' njaun:
+[2026-05-30 11:30:50] Best translation 40 : ou' tai'
+[2026-05-30 11:30:50] Best translation 80 : we' thi' cha.
+[2026-05-30 11:30:50] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 11:30:50] Best translation 320 : a- mjoun
+[2026-05-30 11:30:51] Best translation 640 : a- swan: pja.
+[2026-05-30 11:30:52] Best translation 1280 : sai' khwa.
+[2026-05-30 11:30:53] Total translation time: 3.43882s
+[2026-05-30 11:30:53] [valid] Ep. 22 : Up. 8000 : bleu : 71.0924 : new best
+[2026-05-30 11:31:00] Seen 20,000 samples
+[2026-05-30 11:31:00] Starting data epoch 23 in logical epoch 23
+[2026-05-30 11:31:00] [data] Shuffling data
+[2026-05-30 11:31:00] [data] Done reading 20,000 sentences
+[2026-05-30 11:31:00] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:32:41] Seen 20,000 samples
+[2026-05-30 11:32:41] Starting data epoch 24 in logical epoch 24
+[2026-05-30 11:32:41] [data] Shuffling data
+[2026-05-30 11:32:41] [data] Done reading 20,000 sentences
+[2026-05-30 11:32:41] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:33:03] Ep. 24 : Up. 8500 : Sen. 4,310 : Cost 0.94883996 * 106,333 @ 220 after 1,796,194 : Time 154.66s : 687.52 words/s : gNorm 1.8331
+[2026-05-30 11:34:25] Seen 20,000 samples
+[2026-05-30 11:34:25] Starting data epoch 25 in logical epoch 25
+[2026-05-30 11:34:25] [data] Shuffling data
+[2026-05-30 11:34:25] [data] Done reading 20,000 sentences
+[2026-05-30 11:34:25] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:35:20] Ep. 25 : Up. 9000 : Sen. 11,645 : Cost 0.91042268 * 105,321 @ 275 after 1,901,515 : Time 137.47s : 766.12 words/s : gNorm 1.6543
+[2026-05-30 11:35:20] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter9000.npz
+[2026-05-30 11:35:21] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:35:24] Saving Adam parameters
+[2026-05-30 11:35:27] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 11:35:58] [valid] Ep. 25 : Up. 9000 : cross-entropy : 1.66247 : stalled 2 times (last best: 1.64493)
+[2026-05-30 11:36:00] [valid] Ep. 25 : Up. 9000 : perplexity : 1.54108 : stalled 2 times (last best: 1.53407)
+[2026-05-30 11:36:00] Translating validation set...
+[2026-05-30 11:36:00] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 11:36:00] Best translation 1 : pji: zei:
+[2026-05-30 11:36:00] Best translation 2 : mjin: za: gyoun
+[2026-05-30 11:36:00] Best translation 3 : a- ngan. pei:
+[2026-05-30 11:36:00] Best translation 4 : a- nei a- hta:
+[2026-05-30 11:36:00] Best translation 5 : kya: mi: zwe: mi.
+[2026-05-30 11:36:00] Best translation 10 : hta- min: hsou'
+[2026-05-30 11:36:00] Best translation 20 : si' njaun:
+[2026-05-30 11:36:00] Best translation 40 : ou' tai'
+[2026-05-30 11:36:00] Best translation 80 : we' thi' cha.
+[2026-05-30 11:36:00] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 11:36:01] Best translation 320 : a- mjoun
+[2026-05-30 11:36:01] Best translation 640 : a- swan: pja.
+[2026-05-30 11:36:02] Best translation 1280 : sai' khwa.
+[2026-05-30 11:36:03] Total translation time: 3.40747s
+[2026-05-30 11:36:03] [valid] Ep. 25 : Up. 9000 : bleu : 70.656 : stalled 1 times (last best: 71.0924)
+[2026-05-30 11:36:22] Seen 20,000 samples
+[2026-05-30 11:36:22] Starting data epoch 26 in logical epoch 26
+[2026-05-30 11:36:22] [data] Shuffling data
+[2026-05-30 11:36:22] [data] Done reading 20,000 sentences
+[2026-05-30 11:36:22] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:37:49] Ep. 26 : Up. 9500 : Sen. 18,980 : Cost 0.94009995 * 105,653 @ 165 after 2,007,168 : Time 148.49s : 711.49 words/s : gNorm 1.8542
+[2026-05-30 11:37:51] Seen 20,000 samples
+[2026-05-30 11:37:51] Starting data epoch 27 in logical epoch 27
+[2026-05-30 11:37:51] [data] Shuffling data
+[2026-05-30 11:37:51] [data] Done reading 20,000 sentences
+[2026-05-30 11:37:51] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:39:28] Seen 20,000 samples
+[2026-05-30 11:39:28] Starting data epoch 28 in logical epoch 28
+[2026-05-30 11:39:28] [data] Shuffling data
+[2026-05-30 11:39:28] [data] Done reading 20,000 sentences
+[2026-05-30 11:39:28] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:39:52] Ep. 28 : Up. 10000 : Sen. 6,235 : Cost 0.86773956 * 105,302 @ 220 after 2,112,470 : Time 123.07s : 855.66 words/s : gNorm 1.8852
+[2026-05-30 11:39:52] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter10000.npz
+[2026-05-30 11:39:53] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:39:55] Saving Adam parameters
+[2026-05-30 11:39:59] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 11:40:05] [valid] Ep. 28 : Up. 10000 : cross-entropy : 1.678 : stalled 3 times (last best: 1.64493)
+[2026-05-30 11:40:07] [valid] Ep. 28 : Up. 10000 : perplexity : 1.54732 : stalled 3 times (last best: 1.53407)
+[2026-05-30 11:40:07] Translating validation set...
+[2026-05-30 11:40:07] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 11:40:07] Best translation 1 : pji: zei:
+[2026-05-30 11:40:07] Best translation 2 : mjin: za: gyoun
+[2026-05-30 11:40:07] Best translation 3 : a- ngan. pei:
+[2026-05-30 11:40:07] Best translation 4 : a- nei a- hta:
+[2026-05-30 11:40:07] Best translation 5 : kya: mi: zwe: mi.
+[2026-05-30 11:40:07] Best translation 10 : hta- min: hsou'
+[2026-05-30 11:40:07] Best translation 20 : si' njaun:
+[2026-05-30 11:40:07] Best translation 40 : ou' tai'
+[2026-05-30 11:40:07] Best translation 80 : we' thi' cha.
+[2026-05-30 11:40:07] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 11:40:08] Best translation 320 : a- mjoun
+[2026-05-30 11:40:08] Best translation 640 : a- swan: pja.
+[2026-05-30 11:40:09] Best translation 1280 : sai' khwa.
+[2026-05-30 11:40:10] Total translation time: 3.42184s
+[2026-05-30 11:40:10] [valid] Ep. 28 : Up. 10000 : bleu : 70.1603 : stalled 2 times (last best: 71.0924)
+[2026-05-30 11:41:15] Seen 20,000 samples
+[2026-05-30 11:41:15] Starting data epoch 29 in logical epoch 29
+[2026-05-30 11:41:15] [data] Shuffling data
+[2026-05-30 11:41:15] [data] Done reading 20,000 sentences
+[2026-05-30 11:41:15] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:42:14] Ep. 29 : Up. 10500 : Sen. 13,543 : Cost 0.93826747 * 105,823 @ 220 after 2,218,293 : Time 142.37s : 743.27 words/s : gNorm 1.6440
+[2026-05-30 11:42:44] Seen 20,000 samples
+[2026-05-30 11:42:44] Starting data epoch 30 in logical epoch 30
+[2026-05-30 11:42:44] [data] Shuffling data
+[2026-05-30 11:42:44] [data] Done reading 20,000 sentences
+[2026-05-30 11:42:44] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:44:05] Seen 20,000 samples
+[2026-05-30 11:44:05] Starting data epoch 31 in logical epoch 31
+[2026-05-30 11:44:05] [data] Shuffling data
+[2026-05-30 11:44:05] [data] Done reading 20,000 sentences
+[2026-05-30 11:44:05] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:44:10] Ep. 31 : Up. 11000 : Sen. 825 : Cost 0.90957034 * 104,986 @ 275 after 2,323,279 : Time 116.11s : 904.20 words/s : gNorm 1.8525
+[2026-05-30 11:44:10] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter11000.npz
+[2026-05-30 11:44:12] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:44:14] Saving Adam parameters
+[2026-05-30 11:44:18] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 11:44:29] [valid] Ep. 31 : Up. 11000 : cross-entropy : 1.69689 : stalled 4 times (last best: 1.64493)
+[2026-05-30 11:44:31] [valid] Ep. 31 : Up. 11000 : perplexity : 1.55494 : stalled 4 times (last best: 1.53407)
+[2026-05-30 11:44:31] Translating validation set...
+[2026-05-30 11:44:31] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 11:44:32] Best translation 1 : pji: zei:
+[2026-05-30 11:44:32] Best translation 2 : mjin: za: gyoun
+[2026-05-30 11:44:32] Best translation 3 : a- ngan. pei:
+[2026-05-30 11:44:32] Best translation 4 : a- nei a- hta:
+[2026-05-30 11:44:32] Best translation 5 : kya: mi: zwe: mi.
+[2026-05-30 11:44:32] Best translation 10 : hta- min: hsou'
+[2026-05-30 11:44:32] Best translation 20 : si' njaun:
+[2026-05-30 11:44:32] Best translation 40 : ou' tai'
+[2026-05-30 11:44:32] Best translation 80 : we' thi' cha.
+[2026-05-30 11:44:32] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 11:44:32] Best translation 320 : a- mjoun
+[2026-05-30 11:44:32] Best translation 640 : a- swan: pja.
+[2026-05-30 11:44:34] Best translation 1280 : sai' khwa.
+[2026-05-30 11:44:35] Total translation time: 3.39173s
+[2026-05-30 11:44:35] [valid] Ep. 31 : Up. 11000 : bleu : 70.8752 : stalled 3 times (last best: 71.0924)
+[2026-05-30 11:45:38] Seen 20,000 samples
+[2026-05-30 11:45:38] Starting data epoch 32 in logical epoch 32
+[2026-05-30 11:45:38] [data] Shuffling data
+[2026-05-30 11:45:38] [data] Done reading 20,000 sentences
+[2026-05-30 11:45:38] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:46:10] Ep. 32 : Up. 11500 : Sen. 8,133 : Cost 0.85790735 * 106,030 @ 229 after 2,429,309 : Time 119.38s : 888.18 words/s : gNorm 2.2508
+[2026-05-30 11:46:55] Seen 20,000 samples
+[2026-05-30 11:46:55] Starting data epoch 33 in logical epoch 33
+[2026-05-30 11:46:55] [data] Shuffling data
+[2026-05-30 11:46:55] [data] Done reading 20,000 sentences
+[2026-05-30 11:46:55] [data] Done shuffling 20,000 sentences to temp files
+[2026-05-30 11:47:51] Ep. 33 : Up. 12000 : Sen. 15,495 : Cost 0.83269477 * 106,048 @ 220 after 2,535,357 : Time 100.74s : 1052.71 words/s : gNorm 1.5802
+[2026-05-30 11:47:51] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.iter12000.npz
+[2026-05-30 11:47:52] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:47:54] Saving Adam parameters
+[2026-05-30 11:47:58] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz
+[2026-05-30 11:48:06] [valid] Ep. 33 : Up. 12000 : cross-entropy : 1.72382 : stalled 5 times (last best: 1.64493)
+[2026-05-30 11:48:08] [valid] Ep. 33 : Up. 12000 : perplexity : 1.56588 : stalled 5 times (last best: 1.53407)
+[2026-05-30 11:48:08] Translating validation set...
+[2026-05-30 11:48:08] Best translation 0 : ja' mhu. jwa mhu.
+[2026-05-30 11:48:08] Best translation 1 : pji: zei:
+[2026-05-30 11:48:08] Best translation 2 : mjin: za: gyoun
+[2026-05-30 11:48:08] Best translation 3 : a- ngan. pei:
+[2026-05-30 11:48:08] Best translation 4 : a- nei a- hta:
+[2026-05-30 11:48:08] Best translation 5 : kya: mi: zwe: mi.
+[2026-05-30 11:48:08] Best translation 10 : hta- min: hsou'
+[2026-05-30 11:48:08] Best translation 20 : si' njaun:
+[2026-05-30 11:48:08] Best translation 40 : ou' tai'
+[2026-05-30 11:48:08] Best translation 80 : we' thi' cha.
+[2026-05-30 11:48:08] Best translation 160 : nha- pa: dhwa:
+[2026-05-30 11:48:09] Best translation 320 : a- mjoun
+[2026-05-30 11:48:09] Best translation 640 : a- swan: pja.
+[2026-05-30 11:48:10] Best translation 1280 : sai' khwa.
+[2026-05-30 11:48:11] Total translation time: 3.44716s
+[2026-05-30 11:48:11] [valid] Ep. 33 : Up. 12000 : bleu : 70.2839 : stalled 4 times (last best: 71.0924)
+[2026-05-30 11:48:11] Training finished
+[2026-05-30 11:48:11] Saving model weights and runtime parameters to ../models/change1.seq2seq.myph/model.npz
+[2026-05-30 11:48:18] Saving Adam parameters
+[2026-05-30 11:48:22] [training] Saving training checkpoint to ../models/change1.seq2seq.myph/model.npz and ../models/change1.seq2seq.myph/model.npz.optimizer.npz

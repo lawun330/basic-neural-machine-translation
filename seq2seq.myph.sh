@@ -7,7 +7,7 @@
 
 ## Reference: https://marian-nmt.github.io/examples/mtm2017/complex/
 
-model_folder="../models/baseline.seq2seq.myph"; # -- MODIFIED --
+model_folder="../models/change1.seq2seq.myph"; # -- MODIFIED --
 mkdir ${model_folder};
 data_path="../data/cleaned"; # -- MODIFIED --
 vocab_path="../data/vocab"; # -- MODIFIED --
@@ -27,9 +27,9 @@ marian \
   --mini-batch-fit \
   --valid-mini-batch 32 \
   --valid-metrics cross-entropy perplexity bleu\
-  --valid-freq 5000 --save-freq 5000 --disp-freq 500 \
+  --valid-freq 1000 --save-freq 1000 --disp-freq 500 \
   --dropout-rnn 0.3 --dropout-src 0.3 --exponential-smoothing \
-  --early-stopping 10 \
+  --early-stopping 5 \
   --log ${model_folder}/train.log --valid-log ${model_folder}/valid.log \
   --devices 0 --sync-sgd --seed 1111 \
   --dump-config > ${model_folder}/config.yml
