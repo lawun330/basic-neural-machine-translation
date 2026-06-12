@@ -68,7 +68,8 @@ Results:
 ## References
 
 - [In-Class Tutorial](https://github.com/ye-kyaw-thu/AIE-F/tree/main/slide-code/class-22/NMT-notebooks)
-- ```
+- [Marian](https://github.com/marian-nmt/marian)
+  ```
   @InProceedings{mariannmt,
       title     = {Marian: Fast Neural Machine Translation in {C++}},
       author    = {Junczys-Dowmunt, Marcin and Grundkiewicz, Roman and
