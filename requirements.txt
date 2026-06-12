@@ -1,0 +1,6 @@
+# Install Perl, Marian NMT, and Moses separately.
+# Install these in the working environment:
+matplotlib
+numpy
+pandas
+jupyter
