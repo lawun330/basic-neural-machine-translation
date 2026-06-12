@@ -19,18 +19,27 @@ The workflow covers the full NMT pipeline from data normalization, training, and
 ### Sequence-to-Sequence Model
 1. **Seq2Seq run1** ([nmt_seq2seq_v1](notebooks/nmt_seq2seq_v1.ipynb) => models/baseline.seq2seq.myph/): default settings
 2. **Seq2Seq run2** ([nmt_seq2seq_v2](notebooks/nmt_seq2seq_v2.ipynb) => models/change1.seq2seq.myph/): frequent checkpointing
-3. **Seq2Seq run3** ([nmt_seq2seq_v3](notebooks/nmt_seq2seq_v3.ipynb) => models/change2.seq2seq.myph/): checkpoint averaging
+3. **Seq2Seq run3** ([nmt_seq2seq_v3](notebooks/nmt_seq2seq_v3.ipynb) => models/change2.seq2seq.myph/): checkpoint averaging around the peak via ensemble decoding
 
 ### Transformer Model
 1. **Transformer run1** ([nmt_transformer_v1](notebooks/nmt_transformer_v1.ipynb) => models/baseline.transformer.myph/): default settings
 2. **Transformer run2** ([nmt_transformer_v2](notebooks/nmt_transformer_v2.ipynb) => models/change1.transformer.myph/): frequent checkpointing
-3. **Transformer run3** ([nmt_transformer_v3](notebooks/nmt_transformer_v3.ipynb) => models/change2.transformer.myph/): checkpoint averaging
+3. **Transformer run3** ([nmt_transformer_v3](notebooks/nmt_transformer_v3.ipynb) => models/change2.transformer.myph/): checkpoint averaging around the peak via ensemble decoding
 
 Summary: [presentation slides](presentation_slides.pdf)
 
 Results:
-| ![](img/1.png) | ![](img/2.png) | ![](img/3.png)
-|------------------------|-------------------------|
+| BLEU Scores |
+|:-----------:|
+| ![](img/nmt_bleu_lines.png) |
+
+| Training Time | Decode Time |
+|:-------------:|:-----------:|
+| ![](img/nmt_training_time.png) | ![](img/nmt_decode_time.png) |
+
+| BLEU vs Training Time | BLEU vs Decode Time |
+|:---------------------:|:-------------------:|
+| ![](img/nmt_training_vs_bleu.png) | ![](img/nmt_decode_vs_bleu.png) |
 
 ## Dataset
 
