@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Burmese Grapheme to Phoneme</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <h1>Burmese Grapheme to Phoneme</h1>
+        <p class="subtitle">
+          Enter space-separated Burmese syllables. The model returns romanized phoneme
+          output used in this project's G2P data.
+        </p>
+      </header>
+
+      <section class="card">
+        <div class="grid">
+          <div>
+            <label for="model">Model</label>
+            <select id="model"></select>
+          </div>
+        </div>
+
+        <div class="grid two-col" style="margin-top: 1rem">
+          <div>
+            <label for="input">Grapheme input</label>
+            <textarea
+              id="input"
+              class="my"
+              placeholder="e.g. တက် တက် ပြောင်"
+              spellcheck="false"
+            ></textarea>
+            <p class="hint">One word or phrase per line. Syllables should be separated by spaces.</p>
+            <div class="meta">
+              Normalized input:
+              <code id="normalized">—</code>
+            </div>
+          </div>
+
+          <div>
+            <label for="output">Phoneme output</label>
+            <textarea
+              id="output"
+              class="ph"
+              readonly
+              placeholder="Translation appears here…"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="actions">
+          <div class="translate-group">
+            <button id="translate" class="primary" type="button">Translate</button>
+            <span class="hint shortcut-hint">Ctrl+Enter</span>
+          </div>
+          <button id="clear" class="secondary" type="button">Clear</button>
+        </div>
+
+        <div id="status" class="status" aria-live="polite"></div>
+
+        <p class="examples-label">Examples:</p>
+        <div class="examples" id="examples" aria-label="Example inputs"></div>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 AIE-F. For educational use only.</p>
+      </footer>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

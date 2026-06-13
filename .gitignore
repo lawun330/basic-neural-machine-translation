@@ -4,3 +4,9 @@ __pycache__/
 
 # large model files
 *.npz
+
+# secrets
+.env
+
+# errors detected by the syllable normalizer
+detected_syllable_errors.txt
