@@ -54,9 +54,12 @@ Results:
 ├── models/
 ├── summary/
 │
+├── docker/                 # for interactive testing
+├── web/                    # for interactive testing
+│
 ├── data/
-│   ├── g2p-par/                    # originally Sayar's
-│   ├── cleaned/                    # preprocessed data (version 1)
+│   ├── g2p-par/            # originally Sayar's
+│   ├── cleaned/            # preprocessed data (version 1)
 │   ├── vocab/
 │   └── logs/
 │
@@ -64,6 +67,11 @@ Results:
 ├── seq2seq.myph.sh         # originally Sayar's # modified paths
 └── transformer.myph.sh     # originally Sayar's # modified paths
 ```
+
+## URLs
+
+- [Models](https://huggingface.co/lawun330/basic-neural-machine-translation)
+- [Deployment](https://huggingface.co/spaces/lawun330/basic-neural-machine-translation)
 
 ## References
 

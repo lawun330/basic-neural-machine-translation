@@ -5,6 +5,9 @@ __pycache__/
 # large model files
 *.npz
 
+# large binaries
+docker/marian-decoder
+
 # secrets
 .env
 
