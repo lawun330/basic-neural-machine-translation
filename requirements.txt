@@ -6,3 +6,4 @@ pandas
 jupyter
 flask
 huggingface_hub
+python-dotenv

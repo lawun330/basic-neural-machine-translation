@@ -80,12 +80,14 @@ HF_TOKEN =huggingface-read-access-key
 - Models: [Hugging Face Model](https://huggingface.co/lawun330/basic-neural-machine-translation)
 - Local Demo:
   ```console
-  # run bash to host flask web app locally
+  # 1. clone the repo, install dependencies, set environment variables
+  # 2. run bash to host flask web app locally
   ./web/run.sh
   ```
   or
   ```console
-  # use docker after setting environment variables
+  # 1. clone the repo, set environment variables
+  # 2. use docker
   docker build -f docker/Dockerfile -t basic-nmt .
   docker run -p 7860:7860 --env-file .env basic-nmt
   ```

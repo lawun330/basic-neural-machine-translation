@@ -1,0 +1,4 @@
+# Dependencies for local testing # Exclude libraries used in research notebooks
+flask
+huggingface_hub
+python-dotenv
