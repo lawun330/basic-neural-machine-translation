@@ -1,15 +1,14 @@
-# Burmese G2P web UI + Marian inference (HF Space / local Docker)
+# Basic Neural Machine Translation - Web UI + Marian inference (Local)
+#
+# prerequisite: create .env with environment variables
+# - HF_MODEL_REPO
+# - HF_TOKEN
 #
 # build from repo root:
-#   docker build -f docker/Dockerfile -t basic-neural-machine-translation .
+#   docker build -f docker/Dockerfile -t basic-nmt .
 #
 # run:
-#   docker run -p 7860:7860 \
-#     -e HF_MODEL_REPO=lawun330/basic-neural-machine-translation \
-#     -e HF_TOKEN=hf_xxx \
-#     -e MARIAN_DECODER=/usr/local/bin/marian-decoder \
-#     -e HOST=0.0.0.0 \
-#     basic-neural-machine-translation
+#   docker run -p 7860:7860 --env-file .env basic-nmt
 
 FROM python:3.11-slim-bookworm
 

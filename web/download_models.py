@@ -35,6 +35,14 @@ def load_dotenv() -> None:
     _load_dotenv(env_file, override=False)
 
 
+def clean_env_value(value: str) -> str:
+    """Strip whitespace and surrounding quotes from env/secret values."""
+    value = value.strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+        value = value[1:-1].strip()
+    return value
+
+
 def folder_stem(folder: str) -> str:
     """Turn a local model folder name into the flat Hub name prefix."""
     if folder.endswith(".myph"):
@@ -200,6 +208,10 @@ def print_path_mapping(hub_prefix: str, hub_layout: str) -> None:
 def main() -> int:
     load_dotenv()
     args = parse_args()
+    args.repo = clean_env_value(args.repo)
+    args.token = clean_env_value(args.token)
+    args.hub_prefix = clean_env_value(args.hub_prefix)
+    args.hub_layout = clean_env_value(args.hub_layout)
 
     if args.list:
         print_path_mapping(args.hub_prefix, args.hub_layout)

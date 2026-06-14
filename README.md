@@ -68,10 +68,28 @@ Results:
 └── transformer.myph.sh     # originally Sayar's # modified paths
 ```
 
-## URLs
+## Environment Setup
+The `.env` file includes the following:
+```env
+HF_MODEL_REPO=username/repository
+HF_TOKEN =huggingface-read-access-key
+```
 
-- [Models](https://huggingface.co/lawun330/basic-neural-machine-translation)
-- [Deployment](https://huggingface.co/spaces/lawun330/basic-neural-machine-translation)
+## Testing
+
+- Models: [Hugging Face Model](https://huggingface.co/lawun330/basic-neural-machine-translation)
+- Local Demo:
+  ```console
+  # run bash to host flask web app locally
+  ./web/run.sh
+  ```
+  or
+  ```console
+  # use docker after setting environment variables
+  docker build -f docker/Dockerfile -t basic-nmt .
+  docker run -p 7860:7860 --env-file .env basic-nmt
+  ```
+- Cloud Demo: [Hugging Face Space](https://huggingface.co/spaces/lawun330/basic-neural-machine-translation)
 
 ## References
 
